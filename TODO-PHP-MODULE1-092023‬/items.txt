@@ -1,0 +1,1 @@
+a:3:{s:13:"655eec175b677";a:2:{s:7:"checked";b:1;s:8:"intitule";s:9:"item 1236";}s:13:"655eec8d181a2";a:2:{s:7:"checked";b:1;s:8:"intitule";s:7:"item 25";}s:13:"655fb505e6ccd";a:2:{s:7:"checked";b:0;s:8:"intitule";s:13:"Arcade&#039;s";}}
