@@ -3,6 +3,6 @@
 ## 
 CREATE TABLE todo (
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-intitule VARCHAR(255);
-checked BOOLEAN;
+intitule VARCHAR(255),
+checked BOOLEAN
 );
