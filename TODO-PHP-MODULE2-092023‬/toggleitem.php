@@ -10,8 +10,12 @@
    $query='UPDATE todo SET checked=1-checked WHERE id=:id';
    $stmt = $pdo->prepare($query);
    
-   $stmt->bindParam('id',$id);
-   $stmt->execute(); 
+   if(empty($id)){
+      echo  'Erreur';
+   }else{
+      $stmt->bindParam('id',$id);
+      $stmt->execute(); 
+   }
 
    header('Location:index.php');
 ?>

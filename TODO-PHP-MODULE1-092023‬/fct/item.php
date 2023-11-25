@@ -3,7 +3,7 @@
         $edititemid = get('edititem');
         if($edititemid===$key){
             $html='<form action="edititem.php" method="POST">';
-            $html.='<input type="hidden" name="edititem" value="'.$key.'">';
+            $html.='<input class="red" type="hidden" name="edititem" value="'.$key.'">';
             $html.=' <div class="input-group input-group-sm">
                         <input type="text" class="form-control" name="intitule" value="'.$item['intitule'].'">
                         <span class="input-group-append">
@@ -25,7 +25,7 @@
             }
             $html.='    </a></div>
                         <!-- todo text -->
-                        <span class="text">'.
+                        <span class="text red">'.
                         $item['intitule']
                         .'</span> 
                         <!-- Emphasis label -->

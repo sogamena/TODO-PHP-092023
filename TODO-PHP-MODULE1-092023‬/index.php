@@ -18,7 +18,7 @@
                   <!-- Formulaire d'ajout -->
                   <form action="additem.php" method="POST">
                       <div class="input-group input-group-sm">
-                          <input type="text" class="form-control" name="intitule">
+                          <input type="text" class="form-control" name="intitule" placeholder="Saisissez ici votre Todo">
                           <span class="input-group-append">
                               <button type="submit" class="btn btn-info btn-flat">+</button>
                           </span>
@@ -39,15 +39,10 @@
 
             </div>
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
     </div>
-    <!-- /.content -->
   </div>
-  <!-- /.control-sidebar -->
-
-  <!-- Main Footer -->
-  <?php
+<?php
    include('html/footer.php');
 ?>
 

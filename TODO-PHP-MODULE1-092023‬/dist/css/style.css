@@ -1,0 +1,18 @@
+.texte{
+    color: transparent;
+    font-weight: 800;
+    background: linear-gradient(-45deg, #f09f0b 30%, #38d3e7 65%, #0bc2f0 10%);
+    background-clip: text;
+}
+
+
+
+.contour{
+    border: none;
+}
+
+.red{
+    color: transparent;
+    background: linear-gradient(45deg, #f09f0b 30%, #38d3e7 65%, #0bc2f0 10%);
+    background-clip: text;
+}

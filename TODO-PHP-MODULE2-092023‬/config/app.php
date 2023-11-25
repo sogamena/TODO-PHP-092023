@@ -1,4 +1,4 @@
 <?php
-    const APP_NAME = 'Todo list';
+    const APP_NAME = 'TODO list';
     // const FILE_NAME = 'items.txt';
 ?>

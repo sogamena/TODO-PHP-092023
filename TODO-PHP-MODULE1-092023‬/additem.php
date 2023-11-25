@@ -4,11 +4,15 @@
     include('fct/item.php');
     $intitule = post('intitule');
 
-    $items = getItems();
-    $items[uniqid()] = [
-        'checked'=>false,
-        'intitule'=>$intitule];
-    saveItems($items);
+    if(empty($intitule)){
+        echo 'Erreur';
+    }else{
+        $items = getItems();
+        $items[uniqid()] = [
+            'checked'=>false,
+            'intitule'=>$intitule];
+        saveItems($items);
+    }
 
     header('Location:index.php');
 ?>

@@ -6,12 +6,15 @@
     include('connexion.php');
 
     $intitule = post('intitule');
-    $query="INSERT INTO todo (intitule) VALUES(:intitule)";
-    $stmt = $pdo->prepare($query);
+    if(empty($intitule)){
+        echo 'Erreur';
+    }else{
+        $query="INSERT INTO todo (intitule) VALUES(:intitule)";
+        $stmt = $pdo->prepare($query);
+        $intitule = post('intitule');
+        $stmt->bindParam('intitule',$intitule);
+        $stmt->execute(); 
+    }
     
-    $intitule = post('intitule');
-    $stmt->bindParam('intitule',$intitule);
-    $stmt->execute(); 
-
     header('Location:index.php');
 ?>

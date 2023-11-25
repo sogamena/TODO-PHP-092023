@@ -9,9 +9,15 @@
     $query="UPDATE todo SET intitule=:intitule WHERE id=:id";
     $stmt = $pdo->prepare($query);
     
-    $stmt->bindParam('intitule',post('intitule'));
-    $stmt->bindParam('id',$id);
-    $stmt->execute(); 
+    $intitule = post('intitule');
+    if(empty($intitule)){
+        echo 'Erreur';
+    }else{
+        $stmt->bindParam('intitule',$intitule);
+        $stmt->bindParam('id',$id);
+        $stmt->execute(); 
+    }
+    
 
     header('Location:index.php');
 ?>

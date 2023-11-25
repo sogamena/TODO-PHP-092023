@@ -5,10 +5,14 @@
 
     $items = getItems();
     $id = post('edititem');
-    // var_dump($_POST);
-    $items[$id]['intitule'] = post('intitule');
+    $intitule = post('intitule');
+    if(empty($intitule)){
+        echo 'Erreur';
+    }else{
+        $items[$id]['intitule'] = $intitule;
+        saveItems($items);
+    }
     // var_dump($items);
-    saveItems($items);
 
     header('Location:index.php');
 ?>

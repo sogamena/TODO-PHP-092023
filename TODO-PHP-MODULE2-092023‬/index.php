@@ -7,7 +7,6 @@
    include('fct/request.php');
 
 ?>
-
     <!-- Main content -->
     <div class="content">
       <div class="container">
@@ -17,13 +16,12 @@
                   <!-- Formulaire d'ajout -->
                   <form action="additem.php" method="POST">
                       <div class="input-group input-group-sm">
-                          <input type="text" class="form-control" name="intitule">
+                          <input type="text" class="form-control contour" name="intitule" placeholder="Saisissez todo list">
                           <span class="input-group-append">
                               <button type="submit" class="btn btn-info btn-flat">+</button>
                           </span>
                       </div>
                   </form>
-                  <!-- /.card-header -->
                   <div class="card-body">
                     <ul class="todo-list ui-sortable" data-widget="todo-list">
                         <?php
@@ -36,18 +34,12 @@
                     </ul>
                   </div>
                 </div>
-
             </div>
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
     </div>
-    <!-- /.content -->
   </div>
-  <!-- /.control-sidebar -->
-
-  <!-- Main Footer -->
-  <?php
+<?php
    include('html/footer.php');
 ?>
 
