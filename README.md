@@ -1,4 +1,4 @@
-# Projet TODO list, l'un d'eux (TODO-PHP-MODULE2-092023) utilise une base de données. Voici la table correspondante, mais vous pouvez la modifier si nécessaire.
+# Projet TODO list, l'un d'eux (TODO-PHP-MODULE2-092023) utilise une base de données. Voici la table correspondante, mais vous pouvez le modifier si nécessaire.
 
 ## 
 CREATE TABLE todo (
